@@ -1,0 +1,25 @@
+,debut,fin,task
+25,Wednesday 17 Apr 24 09h55:14,,task_manager
+24,Wednesday 17 Apr 24 07h50:20,Wednesday 17 Apr 24 09h42:23,task_manager
+23,Wednesday 17 Apr 24 07h46:40,Wednesday 17 Apr 24 07h50:20,work_planification
+22,Tuesday 16 Apr 24 15h29:03,Tuesday 16 Apr 24 16h19:49,meeting_said
+21,Tuesday 16 Apr 24 15h24:07,Tuesday 16 Apr 24 15h29:03,pause
+20,Tuesday 16 Apr 24 15h19:45,Tuesday 16 Apr 24 15h24:07,issue_smartsupervision_41_ping
+19,Tuesday 16 Apr 24 14h38:50,Tuesday 16 Apr 24 15h19:45,create_gitlab_repo_smart
+18,Tuesday 16 Apr 24 14h30:31,Tuesday 16 Apr 24 14h38:50,mails
+17,Tuesday 16 Apr 24 13h40:08,Tuesday 16 Apr 24 14h30:31,create_gitlab_repo_smart
+16,Tuesday 16 Apr 24 11h49:18,Tuesday 16 Apr 24 13h40:08,task_manager
+15,Tuesday 16 Apr 24 11h26:36,Tuesday 16 Apr 24 11h49:18,pause
+14,Tuesday 16 Apr 24 09h04:41,Tuesday 16 Apr 24 11h26:36,task_manager
+13,Tuesday 16 Apr 24 08h00:13,Tuesday 16 Apr 24 09h04:41,meeting_sudharsan
+11,Monday 15 Apr 24 12h20:57,Monday 15 Apr 24 14h25:03,create_gitlab_repo_setup
+10,Monday 15 Apr 24 11h09:24,Monday 15 Apr 24 12h20:57,meeting_jean_yves
+9,Monday 15 Apr 24 10h59:08,Monday 15 Apr 24 11h09:24,create_gitlab_repo
+8,Monday 15 Apr 24 10h33:55,Monday 15 Apr 24 10h59:08,pause
+7,Monday 15 Apr 24 10h21:22,Monday 15 Apr 24 10h33:55,issue_smartsupervision_41_ping
+6,Monday 15 Apr 24 09h44:10,Monday 15 Apr 24 10h21:22,work_planification
+5,Friday 12 Apr 24 09h22:06,Friday 12 Apr 24 11h01:02,meeting_setup_review
+4,Friday 12 Apr 24 08h33:39,Friday 12 Apr 24 09h22:06,pause
+3,Friday 12 Apr 24 07h30:08,Friday 12 Apr 24 08h33:39,meeting_smartsupervision
+2,Friday 12 Apr 24 07h17:34,Friday 12 Apr 24 07h30:08,issue_smartsupervision_41_ping
+1,Friday 12 Apr 24 06h20:47,Friday 12 Apr 24 07h17:34,work_planification

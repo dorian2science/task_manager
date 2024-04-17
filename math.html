@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="./js/lib.js"> </script>
+<style>
+div.cmath {
+  display: block;
+  margin: 20px 0px 20px 30px;
+  padding-left: 50px; padding-top: 8px; padding-bottom: 8px;
+  white-space : pre;
+}
+.cmjx-highlight { border: 2px solid #DD4A68; padding: 8px; margin-right: 4px; }
+.cmjx-nb { position: absolute; left: 600px; }
+.cmjx-lg { font-size: 1.65rem; padding-bottom:8px;}
+</style>
+<script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2.7.6/MathJax.js?config=AM_CHTML"> </script>
+</head>
+
+<body>
+  <h1>testing expressions </h1>
+  <a href= https://www.sqlpac.com/en/documents/html-equations-math-with-mathjax-asciimath.html> Link to the tutorial source </a>
+  <h3>just math formulas with mathJax:</h3>
+  <div class="cmath">
+   `f(x)=x^2 + 2x + 1 = 0`             Derivative of the function : `f^'(x)=2x + 2`
+
+   `frac(df(x))(dx) = lim_(h->0)(f(x+h)-f(x))/h`
+
+   `f(t) = a_(0)/2 + sum_(n=1)^oo [a_(n) cos(nt) + b_(n) sin(nt)]`
+
+   `x^' = frac(-b -sqrt(Delta))(2a)`
+  </div>
+
+  <h3>highlight with borders formulas:</h3>
+  <div class="cmath">
+  `class{cmjx-highlight} { e^x = lim_(n->oo) (1 + x/n)^n }`
+  </div>
+  <p> The volume of a sphere is <span class="cmath"> `class{cmjx-highlight} {V = 4/3\piR^3} ` </span>, therefore …</p>
+
+  <h3>numbering equations:</h3>
+  <div class="cmath">
+   `cos^2 \theta + sin^2 \theta  = 1 class{cmjx-nb}{(9)}`
+
+   `cos^2 \theta - sin^2 \theta = cos 2\theta class{cmjx-nb}{(10)}`
+ </div>
+   <h3>matrix:</h3>
+   <div class="cmath">
+    `[bbrho] = ( ( 1/2 , 0   ),
+                 ( 0   , 1/2 )
+               )`
+    </div>
+    <div class="cmath">
+     `[bbrho] = ( ( class{cmjx-lg}{1/2} , 0                   ),
+                  ( 0                   , class{cmjx-lg}{1/2} )
+                )`
+    </div>
+</body>
+</html>

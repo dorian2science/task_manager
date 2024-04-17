@@ -1,0 +1,43 @@
+div.cmath {
+  display: block;
+  margin: 20px 0px 20px 30px;
+  padding-left: 50px; padding-top: 8px; padding-bottom: 8px;
+  white-space : pre;
+}
+.cmjx-highlight { border: 2px solid #DD4A68; padding: 8px; margin-right: 4px; }
+.ok{
+  list-style-image: url('icons/greencheck.png');
+}
+.fail{
+  list-style-image: url('icons/failcheck.png');
+}
+.progress{
+  list-style-image: url('icons/in_progress_icon.png');
+}
+.urgent{
+  list-style-image: url('icons/urgent2.png');
+}
+.command{
+  font-family: Courier;
+  padding:10px;
+  background-color: #e9ded8ff
+}
+.quick_command{
+  font-size: 18px;
+  color:magenta;
+  font-family:Courier;
+  font-weight:bold
+}
+.path{
+  font-size: 18px;
+  color:#37394c;
+  background-color:#eaead1;
+  font-family:Courier;
+  font-weight:bold
+}
+.big{
+  font-size:50px;
+}
+table, th, td {
+  border:1px solid black;
+}

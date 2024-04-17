@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    window.MathJax = {
+       tex2jax : { inlineMath : [ ['##','##'], ["\\(","\\)"] ],
+                   displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                   processEscapes : true
+        },
+        displayAlign: "left"
+     };
+    </script>
+  <script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+
+<script> var mjax_config='TeX-MML-AM_CHTML'; </script>
+<script type="text/javascript" src="./js/lib.js"> </script>
+<style>
+.cmjx-highlight { border: 2px solid #DD4A68; padding: 8px; margin-right: 4px; }
+div.cmath {
+  display: block;
+  margin: 20px 0px 20px 30px;
+  padding-left: 50px; padding-top: 8px; padding-bottom: 8px;
+  white-space : pre;
+}
+</style>
+
+</head>
+
+<body>
+<h1>testing expressions </h1>
+<a href= https://www.sqlpac.com/en/documents/html-equations-math-with-mathjax-asciimath.html> Link to the tutorial source </a>
+
+<div class="cmath">$$
+    [\pmb{\rho}] =
+      \begin{pmatrix}
+        \dfrac{1}{2} & 0            \\
+        0            & \dfrac{1}{2} \\
+      \end{pmatrix}
+$$</div>
+<div class="cmath">$$
+  x = \cfrac{1}{\sqrt{2}+
+        \cfrac{1}{\sqrt{2}+
+          \cfrac{1}{\sqrt{2}+\dotsb}
+        }
+    }
+$$</div>
+<div class="cmath">$$
+    \begin{align}
+      f(x)   &= \frac{x+1}{x-2} \\ \\
+      f'(x)  &= \frac{(x-2) - (x+1)}{(x-2)^2} \\ \\
+             &= - \frac{3}{x^2 - 4x + 4}
+    \end{align}
+$$</div>
+<h2>combining both</h2>
+<div class="cmath">$$
+    \begin{align}
+        \cos 2\theta                   &= \cos^2 \theta - \sin^2 \theta   \tag{9}  \label{cos2x} \\ \\
+
+        \cos^2 \theta + \sin^2 \theta  &= 1                               \tag{10} \label{10}    \\ \\
+    \end{align}
+$$</div>
+<div class="cmath">
+We deduce from the formulas \( \ref{cos2x} \) and \( \ref{10} \) :
+$$
+    \begin{align}
+      \cos 2\theta       &= \cos^2 \theta + \sin^2 \theta - \sin^2 \theta - \sin^2 \theta \\ \\
+                         &= 1 - 2\sin^2\theta
+    \end{align}
+$$</div>

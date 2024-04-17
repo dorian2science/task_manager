@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link rel="icon" href="in_progress_icon.png" type="image/icon type"> -->
+  <link rel="icon" href="hammer.png" type="image/icon type">
+  <script>
+    window.MathJax = {
+       tex2jax : { inlineMath : [ ['##','##'], ["\\(","\\)"] ],
+                   displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                   processEscapes : true
+        },
+        displayAlign: "left"
+     };
+    </script>
+  <script async="true" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+  <!-- <script src="js/mathjax_local.js"> </script> -->
+  <script> var mjax_config='TeX-MML-AM_CHTML'; </script>
+  <script type="text/javascript" src="./js/lib.js"> </script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/awesome_fonts.css">
+</head>
+
+<body>
+  <title>suivi des activités de Dorian Drevon</title>
+  <h1> logbook</h1>
+
+  <h2>mardi 16 avril 2024</h2>
+  <ul>
+    <li>
+      Meeting with sudharsan. Okta does not work for sudharsan. He checks with IT department to set up okta.
+      <br>
+      Working on <a href="https://github.com/dorianStGobain/smart_supervision/issues/40">bug overview page</a>
+    </li>
+  </ul>
+
+  <h2>lundi 15 avril 2024</h2><ul>
+    <li>meeting with Jean Yves</li>
+    <li>create gitlab repository of setup management</li>
+  </ul>
+
+  <h2>vendredi 12 avril 2024</h2>
+  <ul>
+    <li class="ok">create ticket to build retroactively the glass files for salaise code development. Start with CAL data.
+      <a href="https://github.com/dorianStGobain/smart_supervision_salaise/issues/2">issue#2</a>
+    </li>
+  </ul>
+  <h2>jeudi 11 avril 2024</h2>
+    <ul>
+      <li class="ok">
+        look at line mapping files generate them == snapshot of the overview. Which glasssId are in which compartments at a given time.
+        <br>
+        <img src="figures/linefiles.png" alt="linefiles" width="400">
+      </li>
+      <li class="ok">populate and create an action plan for dabrowa issues on <a href="https://sgts.service-now.com/now/nav/ui/classic/params/target/sc_req_item.do%3Fsys_id%3Db2f79a30c36dca90ca8cbed9d001312e%26sysparm_view%3DRPTe281cf411b28d1d0c28eeb91604bcbf4%26sysparm_record_target%3Dsc_req_item%26sysparm_record_row%3D3%26sysparm_record_rows%3D4%26sysparm_record_list%3Dcat_item%253D3c9c5a8adb701510732122e5059619ef%255Evariables.77c36722c31c19500bd116c4e4013178%253D12%255Eactive%253Dtrue%255Evariables.77c36722c31c19500bd116c4e4013178%253D12%255Evariables.bdf4baa2c31819500bd116c4e4013142%253Ddabrowa%255EORDERBYstate">service now ticket</a></li>
+      <li class="ok">Meeting DAB team smart supervision </li>
+      <li class="ok"><b>functions_utils</b>
+        <br>Create git repo on github for <a href="https://github.com/dorianStGobain/functions_utils">functions_utils</a>.
+        <br>the goal is to enhance python2.7 by creating a mini pandas code.
+        <br>
+        <img width="400" src="figures/functions_utils.png" alt="image here">
+      </li>
+    </ul>
+  <h2>mercredi 10 avril 2024</h2>
+  <ul>
+    <li class="ok">solve problem access to coatify server with dragutin</li>
+    <li class=progress>
+      <b>building retroactively glass files from historian</b>
+    </li>
+  </ul>
+  <h2>mardi 9 avril 2024</h2>
+  <ul>
+    <li class="ok">get disk space usage of db tables in CAL since front,end positions historized.
+      <br>
+      <img src="figures/CAL_table_sizes.png" alt="CAL_table_sizes" width="400">
+    </li>
+    <li class="progress">building retroactively glass files from historian with CAL data</li>
+  </ul>
+
+
+  <h2>test equation in html</h2>
+  <p>first equation written with latex:
+    So cool moreover...: <span class="cmath">`class{cmjx-highlight} {\delta=e^x.\alpha/(2*x)}`</span>
+  </p>
+  <ol>
+    <li>formula 2 :<span class=cmath> `\Omega=P_c*s*\delta t`<span></li>
+    <li>formula du rendement:<span class=cmath> `\eta=P_(In)/P_(out)`<span></li>
+  </ol>
+
+</body>
+</html>
+
+<script type="text/javascript" src="../static/bower_components/showdown/dist/showdown.min.js"></script>
+<script type="text/javascript">
+  var converter = new showdown.Converter()
+  $('#pop_equations').load('../static/html/equations.html')
+
+    '../static/logVersionSmallPower.md', function(md_text) {
+      $('#pop_version_info')[0].innerHTML=co  nverter.makeHtml(md_text)
+    }),
+  )
+</script>
