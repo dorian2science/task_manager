@@ -1,3 +1,4 @@
 bower_components/
 figures/html_fig/
 __pycache__/
+log_hours.csv
