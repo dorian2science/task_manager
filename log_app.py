@@ -60,6 +60,7 @@ def start():
 def stop():
     tm.complete_job()
     task_fill_area.delete("1.0", tk.END)
+    update()
     # messagebox.showinfo("Info", "Stop function triggered")
 
 def on_key_press(event):
@@ -104,50 +105,26 @@ task_fill_area.place(x=0, y=0, relwidth=0.8, relheight=0.5)
 button_frame = tk.Frame(tab1)
 button_frame.place(relx=0.8, rely=0, relwidth=0.2, relheight=1)
 
-button1 = tk.Button(button_frame, text="work_planification",font=("Arial", 12),command=lambda: predefined_task("work_planification"))
-button1.pack(fill=tk.X)
-
-button2 = tk.Button(button_frame, text="meeting",font=("Arial", 12),command=lambda: predefined_task("meeting_"))
-button2.pack(fill=tk.X)
-
-button3 = tk.Button(button_frame, text="issue_smartsupervision",font=("Arial", 12),command=lambda: predefined_task("issue_smartsupervision_"))
-button3.pack(fill=tk.X)
-
-button4 = tk.Button(button_frame, text="issue_setupmanagement",font=("Arial", 12),command=lambda: predefined_task("issue_setupmanagement_"))
-button4.pack(fill=tk.X)
-
-button5 = tk.Button(button_frame, text="pause",font=("Arial", 12),command=lambda: predefined_task("pause"))
-button5.pack(fill=tk.X)
+tk.Button(button_frame, text="work_planification",font=("Arial", 12),command=lambda: predefined_task("work_planification")).pack(fill=tk.X)
+tk.Button(button_frame, text="mails",font=("Arial", 12),command=lambda: predefined_task("mails")).pack(fill=tk.X)
+tk.Button(button_frame, text="meeting",font=("Arial", 12),command=lambda: predefined_task("meeting_")).pack(fill=tk.X)
+tk.Button(button_frame, text="issue_smartsupervision",font=("Arial", 12),command=lambda: predefined_task("issue_smartsupervision_")).pack(fill=tk.X)
+tk.Button(button_frame, text="issue_setupmanagement",font=("Arial", 12),command=lambda: predefined_task("issue_setupmanagement_")).pack(fill=tk.X)
+tk.Button(button_frame, text="pause",font=("Arial", 12),command=lambda: predefined_task("pause")).pack(fill=tk.X)
 
 
 start_finish_frame = tk.Frame(tab1)
 start_finish_frame.place(x=0, rely=0.5)
-# Create start button
 start_button = tk.Button(start_finish_frame, text="Start task", command=start, height=2, width=20)  # Adjust button size
 start_button.grid(row=0,column=0)
 finish_button = tk.Button(start_finish_frame, text="Finish task", command=stop, height=2, width=20)  # Adjust button size
 finish_button.grid(row=0,column=1)
-# finish_button.place(relx=0.5, rely=0, relwidth=0.5, relheight=1)
-
 
 frame_df = tk.Frame(tab1)
 frame_df.place(x=0, rely=0.62,relwidth=1)
 
-# canvas = tk.Canvas(frame_df)
-# canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
-
 df_log = tk.Text(frame_df, font=("Courier", 15), wrap="none",width=150)
 df_log.pack()
-
-
-# pt = Table(canvas, dataframe=pd.read_csv(FULL_LOG,index_col=0).head(), showtoolbar=True, showstatusbar=True)
-# pt.show()
-#
-# scrollbar = tk.Scrollbar(frame_df, orient="vertical", command=canvas.yview)
-# scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-# canvas.configure(yscrollcommand=scrollbar.set)
-# canvas.create_window((0, 0), window=pt, anchor="nw")
-# pt.bind("<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
 
 root.bind("<Return>", on_key_press)
 root.bind("<f>", on_key_press)
@@ -162,7 +139,6 @@ log_week.pack()
 tk.Label(tab2, text='Total hours spent each week this month:').pack()
 log_month = tk.Text(tab2, font=("Courier", 15),width=50,height=7)
 log_month.pack()
-
 
 def create_frame_label(tab,label_txt,w):
     f_workdays = ttk.Frame(tab)
@@ -184,10 +160,7 @@ tk.Label(tab2, text='Total hours spent on each categorie this month').pack()
 log_cat = tk.Text(tab2,font=("Courier", 15),width=50,height=15)
 log_cat.pack()
 
-# Lift the window to the front
-root.lift()
 
-# Run the application
 import threading
 import time
 class SetInterval:
@@ -238,4 +211,5 @@ def on_closing():
 
 root.protocol("WM_DELETE_WINDOW", on_closing)
 
+root.lift()
 root.mainloop()
